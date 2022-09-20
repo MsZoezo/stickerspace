@@ -1,0 +1,50 @@
+.navlink {
+    text-decoration: none;
+    color: #4b4c4d;
+}
+
+.inner-navbar .navlink {
+    font-size: 1.5rem;
+
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    position: relative;
+}
+
+.inner-navbar .navlink img {
+    display: none;
+}
+
+.inner-navbar .navlink::after {
+    display: none;
+
+    background-color: hsl(30, 2%, 72%);
+    border-radius: 2px 2px 0px 0px;
+    content: "";
+
+    bottom: 0;
+    height: 0.4rem;
+    left: 0;
+    right: 0;
+
+    position: absolute;
+}
+
+.inner-navbar .navlink:hover::after {
+    display: initial;
+}
+
+.hamburg-menu .navlink {
+    width: 90%;
+    font-size: 3.25rem;
+    font-weight: 550;
+
+    display: flex;
+}
+
+.hamburg-menu .navlink img {
+    margin-left: auto;
+    width: 40px;
+}

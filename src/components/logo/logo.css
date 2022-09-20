@@ -1,0 +1,25 @@
+.logo {
+    max-height: 50px;
+}
+
+.logo-anchor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+
+    height: 100%;
+
+    font-size: 2.25rem;
+    text-decoration: none;
+    color: #3a3938;
+    font-family: sans-serif;
+    font-weight: 700;
+
+}
+
+.logo-image {
+    width: 40px;
+    height: 40px;
+}
+

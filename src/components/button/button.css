@@ -1,0 +1,21 @@
+.cta-button {
+    padding: 1.1rem 3.25rem;
+    border-radius: 3rem;
+    border: none;
+
+    background-color: #116ff4;
+    transition: background-color 0.2s;
+
+    color: white;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.cta-button:hover {
+    background-color: #084fff;
+    cursor: pointer;
+}
+
+.inner-navbar .cta-button {
+    margin-left: auto;
+}
