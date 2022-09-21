@@ -5,6 +5,7 @@ import Navlink from "../components/navlink";
 import Logo from '../components/logo';
 import Button from '../components/button';
 import Header from '../components/header';
+import Over from '../components/over';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Button name="Login" />
       </Navbar>
       <Header />
+      <Over />
     </>
   );
 }
