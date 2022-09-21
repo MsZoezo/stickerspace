@@ -49,9 +49,11 @@
 .hamburg-menu {
     display: none;
 
+    z-index: 999;
+
     position: absolute;
     width: 100vw;
-    height: calc(100vh - 8rem);
+    min-height: calc(100vh - 8rem);
     padding-top: 2rem;
 
     top: 8rem;
