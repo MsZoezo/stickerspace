@@ -1,10 +1,11 @@
+import "./navigatie.css";
+
 import React from "react";
 
-import Navlink from "../navlink";
-import Logo from "../logo";
-import Button from "../button";
+import Navlink from "../navlink/navlink";
+import Logo from "../logo/logo";
+import Button from "../button/button";
 
-import "./navbar.css"
 
 const Navbar = (props) => {
     let logo = null;

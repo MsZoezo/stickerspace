@@ -1,6 +1,6 @@
 import "./header.css";
 
-import Button from "../button";
+import Button from "../button/button";
 
 const Header = () => {
     return(

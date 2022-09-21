@@ -1,11 +1,11 @@
-import './App.css';
+import './app.css';
 
-import Navbar from '../components/navbar';
-import Navlink from "../components/navlink";
-import Logo from '../components/logo';
-import Button from '../components/button';
-import Header from '../components/header';
-import Over from '../components/over';
+import Navbar from '../components/navigatie/navigatie';
+import Navlink from "../components/navlink/navlink";
+import Logo from '../components/logo/logo';
+import Button from '../components/button/button';
+import Header from '../components/header/header';
+import Over from '../components/over/over';
 
 function App() {
   return (
