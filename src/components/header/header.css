@@ -1,6 +1,7 @@
 .header {
     width: 100vw;
-    height: calc(100vh - 8rem);
+    min-height: 40rem;
+    height: calc(100vh - 20rem);
 
     max-height: 100rem;
 
@@ -8,7 +9,7 @@
     justify-content: center;
     align-items: center;
 
-    overflow: hidden;
+    overflow: visible;
 
     position: relative;
     background-color: #faf6f4;
@@ -22,6 +23,7 @@
 
     justify-content: flex-end;
     overflow-y: hidden;
+    max-height: 100%;
 }
 
 .header .header-stickers:last-of-type {
@@ -54,6 +56,14 @@
     padding-bottom: 2.5rem;
 }
 
+.header-wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    transform: translateY(100%);
+}
+
 @media only screen and (max-width: 700px) {
     .header {
         flex-direction: column;
@@ -61,14 +71,13 @@
         padding: 2rem 0;
         height: auto;
 
-        overflow-x: auto;
-
     }
 
     .header-stickers {
         overflow-x: hidden;
         overflow-y: visible;
-
+        
+        padding: 0;
         padding-bottom: 2rem;
     }
 
