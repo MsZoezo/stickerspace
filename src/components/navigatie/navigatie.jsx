@@ -1,6 +1,6 @@
 import "./navigatie.css";
 
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 import Navlink from "../navlink/navlink";
 import Logo from "../logo/logo";
@@ -18,12 +18,27 @@ const Navbar = (props) => {
         if (child.type === Button) button = child;
     });
 
+    const [isStuck, setIsStuck] = useState(false);
+    const ref = useRef();
+
+    useEffect(() => {
+        const cachedRef = ref.current;
+        const observer = new IntersectionObserver(([element]) => {
+            console.log(element.intersectionRatio < 1);
+            setIsStuck(element.intersectionRatio < 1);
+        }, {threshold: [1], rootMargin: '-1px 0px 0px 0px', root: document.getElementById('root')});
+
+        observer.observe(cachedRef);
+
+        return () => observer.unobserve(cachedRef);
+    }, []);
+
     const [showHamburg, setShowHamburg] = React.useState(false);
 
     const click = () => setShowHamburg(!showHamburg);
 
     return (
-        <nav className="navbar">
+        <nav className={isStuck ? "navbar" : "navbar stuck"} ref={ref}>
             <div className="inner-navbar">
                 <button onClick={click} className="navbar-hamburg">
                     { showHamburg ? null : <img src="/images/menu.svg" alt="Menu " />}

@@ -1,4 +1,6 @@
 .navbar {
+    z-index: 999;
+
     width: 100vw;
     height: 8rem;
 
@@ -9,6 +11,13 @@
     align-items: center;
 
     padding: 0 2rem;
+
+    position: sticky;
+    top: 0;
+}
+
+.stuck {
+    box-shadow: 0 0.75rem 0.5rem 0 rgba(0, 0, 0, 0.05);
 }
 
 .inner-navbar {
