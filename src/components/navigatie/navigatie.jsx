@@ -26,7 +26,7 @@ const Navbar = (props) => {
         const observer = new IntersectionObserver(([element]) => {
             console.log(element.intersectionRatio < 1);
             setIsStuck(element.intersectionRatio < 1);
-        }, {threshold: [1], rootMargin: '-1px 0px 0px 0px', root: document.getElementById('root')});
+        }, {threshold: [1], rootMargin: '-1px 0px 0px 0px'});
 
         observer.observe(cachedRef);
 
@@ -38,7 +38,7 @@ const Navbar = (props) => {
     const click = () => setShowHamburg(!showHamburg);
 
     return (
-        <nav className={isStuck ? "navbar" : "navbar stuck"} ref={ref}>
+        <nav className={isStuck ? "navbar stuck" : "navbar"} ref={ref}>
             <div className="inner-navbar">
                 <button onClick={click} className="navbar-hamburg">
                     { showHamburg ? null : <img src="/images/menu.svg" alt="Menu " />}
