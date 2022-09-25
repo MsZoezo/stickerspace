@@ -3,7 +3,7 @@
     color: #4b4c4d;
 }
 
-.inner-navbar .navlink {
+.navbar__inner .navlink {
     font-size: 1.5rem;
 
     height: 100%;
@@ -13,11 +13,11 @@
     position: relative;
 }
 
-.inner-navbar .navlink img {
+.navbar__inner .navlink img {
     display: none;
 }
 
-.inner-navbar .navlink::after {
+.navbar__inner .navlink::after {
     display: none;
 
     background-color: hsl(30, 2%, 72%);
@@ -32,11 +32,11 @@
     position: absolute;
 }
 
-.inner-navbar .navlink:hover::after {
+.navbar__inner .navlink:hover::after {
     display: initial;
 }
 
-.hamburg-menu .navlink {
+.navbar__hamburg-menu .navlink {
     width: 90%;
     font-size: 3.25rem;
     font-weight: 550;
@@ -44,7 +44,7 @@
     display: flex;
 }
 
-.hamburg-menu .navlink img {
+.navbar__hamburg-menu .navlink img {
     margin-left: auto;
     width: 40px;
 }

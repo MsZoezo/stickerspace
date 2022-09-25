@@ -38,23 +38,23 @@ const Navbar = (props) => {
     const click = () => setShowHamburg(!showHamburg);
 
     return (
-        <nav className={isStuck ? "navbar stuck" : "navbar"} ref={ref}>
-            <div className="inner-navbar">
-                <button onClick={click} className="navbar-hamburg">
+        <nav className={isStuck ? "navbar is-stuck" : "navbar"} ref={ref}>
+            <div className="navbar__inner">
+                <button onClick={click} className="navbar__hamburg-button">
                     { showHamburg ? null : <img src="/images/menu.svg" alt="Menu " />}
                     { showHamburg ? <img src="/images/close.svg" alt="Close menu " /> : null }
                     </button>
 
                 {logo}
 
-                <section className="navbar-links">
+                <section className="navbar__links">
                     {navlinks}
                 </section>
 
                 {button}
             </div>
 
-            { showHamburg ? <section className="hamburg-menu">{navlinks}</section> : null }
+            { showHamburg ? <section className="navbar__hamburg-menu">{navlinks}</section> : null }
         </nav>
     );
 }

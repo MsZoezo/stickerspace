@@ -18,6 +18,6 @@
     cursor: pointer;
 }
 
-.inner-navbar .cta-button {
+.navbar__inner .cta-button {
     margin-left: auto;
 }

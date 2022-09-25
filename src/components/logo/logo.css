@@ -2,7 +2,7 @@
     max-height: 50px;
 }
 
-.logo-anchor {
+.logo__anchor {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -18,7 +18,7 @@
 
 }
 
-.logo-image {
+.logo__image {
     width: 40px;
     height: 40px;
 }
