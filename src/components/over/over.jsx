@@ -8,7 +8,7 @@ const Over = () => {
             <span className="over-text">
                 <h1>Over Stickerspace</h1>
                 <p>
-                    Stickerspace is dé app om stickers te ontdekken,<br />
+                    Stickerspace is dé app om stickers te ontdekken,<br /><br />
                     Via gepersonaliseerde collecties en geadvanceerde filters zijn er altijd nieuwe stickers om te delen!
                 </p>
             </span>
