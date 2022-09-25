@@ -2,31 +2,16 @@ import "./navigatie.css";
 
 import React, { useEffect, useRef, useState } from "react";
 
-import Navlink from "../navlink/navlink";
 import Logo from "../logo/logo";
-import Button from "../button/button";
 
 
 const Navbar = (props) => {
-    let logo = null;
-    let button = null;
-    let navlinks = [];
-
-    React.Children.forEach(props.children, child => {
-        if (child.type === Logo) logo = child;
-        if (child.type === Navlink) navlinks.push(child);
-        if (child.type === Button) button = child;
-    });
-
     const [isStuck, setIsStuck] = useState(false);
     const ref = useRef();
 
     useEffect(() => {
         const cachedRef = ref.current;
-        const observer = new IntersectionObserver(([element]) => {
-            console.log(element.intersectionRatio < 1);
-            setIsStuck(element.intersectionRatio < 1);
-        }, {threshold: [1], rootMargin: '-1px 0px 0px 0px'});
+        const observer = new IntersectionObserver(([element]) => setIsStuck(element.intersectionRatio < 1), {threshold: [1], rootMargin: '-1px 0px 0px 0px'});
 
         observer.observe(cachedRef);
 
@@ -45,16 +30,16 @@ const Navbar = (props) => {
                     { showHamburg ? <img src="/images/close.svg" alt="Close menu " /> : null }
                     </button>
 
-                {logo}
+                <Logo />
 
                 <section className="navbar__links">
-                    {navlinks}
+                    {props.links}
                 </section>
 
-                {button}
+                {props.button || null}
             </div>
 
-            { showHamburg ? <section className="navbar__hamburg-menu">{navlinks}</section> : null }
+            { showHamburg ? <section className="navbar__hamburg-menu">{props.links}</section> : null }
         </nav>
     );
 }
