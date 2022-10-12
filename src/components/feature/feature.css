@@ -1,0 +1,32 @@
+.feature {
+    width: 50%;
+    min-width: 50rem;
+    
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 5rem;
+}
+
+.feature__sticker {
+    width: 10rem;
+    height: 10rem;
+
+    margin-bottom: 1rem;
+}
+
+.feature__sticker img {
+    width: 100%;
+    height: 100%;
+}
+
+.feature h3 {
+    font-size: 2.5rem;
+}
+
+.feature p {
+    font-size: 2rem;
+}

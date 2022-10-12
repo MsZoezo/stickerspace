@@ -1,0 +1,25 @@
+.flexgrid {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 2.5rem;
+}
+
+.flexgrid__header h2 {
+    font-size: 3rem;
+}
+
+.flexgrid__inner {
+    width: 100%;
+    max-width: var(--max-width);
+    height: fit-content;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
