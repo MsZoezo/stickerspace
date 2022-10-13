@@ -9,6 +9,7 @@ import Over from '../components/over/over';
 import Feature from '../components/feature/feature';
 import FlexGrid from '../components/flexgrid/flexgrid';
 import Abonnement from '../components/abonnement/abonnement';
+import Contact from '../components/contact/contact';
 
 function App() {
   return (
@@ -45,6 +46,8 @@ function App() {
         <Abonnement name="Basic" price="€5 EUR/maand" duration="maandelijks" features={["10 Collecties", "1000 Stickers"]} best={true} />
         <Abonnement name="Premium" duration="maandelijks" price="€7,50 EUR/maand" features={["Oneindige collecties!", "Oneindige stickers!"]} />
       </FlexGrid>
+
+      <Contact />
     </>
   );
 
