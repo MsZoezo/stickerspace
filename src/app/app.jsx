@@ -10,6 +10,7 @@ import Feature from '../components/feature/feature';
 import FlexGrid from '../components/flexgrid/flexgrid';
 import Abonnement from '../components/abonnement/abonnement';
 import Contact from '../components/contact/contact';
+import Footer from '../components/footer/footer';
 
 function App() {
   return (
@@ -35,10 +36,10 @@ function App() {
       <Over />
 
       <FlexGrid title="Onze features" maxWidth="150rem">
-        <Feature title="Pog" description="Very pog feature yes" img="/images/sticker1.svg" alt=""/>
-        <Feature title="Pog" description="Very pog feature yes" img="/images/sticker2.svg" alt=""/>
-        <Feature title="Pog" description="Very pog feature yes" img="/images/sticker3.svg" alt=""/>
-        <Feature title="Pog" description="Very pog feature yes" img="/images/sticker4.svg" alt=""/>
+        <Feature title="Stickers" description="Duizenden stickers tot je beschikking." img="/images/sticker1.svg" alt=""/>
+        <Feature title="Artificial Intelligence" description="AI curated collecties." img="/images/sticker2.svg" alt=""/>
+        <Feature title="Feature" description="Nog een coole feature" img="/images/sticker3.svg" alt=""/>
+        <Feature title="Feature" description="Ik heb echt geen idee" img="/images/sticker4.svg" alt=""/>
       </FlexGrid>
 
       <FlexGrid title="Prijs">
@@ -48,6 +49,8 @@ function App() {
       </FlexGrid>
 
       <Contact />
+
+      <Footer />
     </>
   );
 

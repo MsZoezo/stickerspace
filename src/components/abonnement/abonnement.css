@@ -7,8 +7,17 @@
     margin: 2.5rem 5rem;
     padding: 3rem 1.5rem;
 
+    /* background-color: #fed45c; */
     background-color: #faf6f4;
     border-radius: 1rem;
+
+    box-shadow: 0 0.75rem 0 0 #ff7e1d;
+    transition: box-shadow 0.1s linear;
+}
+
+.abonnement:hover {
+    box-shadow: -0.75rem 0.75rem 0 0 #ff7e1d;
+    cursor: pointer;
 }
 
 .abonnement__bestValue {

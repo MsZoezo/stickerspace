@@ -1,6 +1,8 @@
 .contact {
     width: 100vw;
     height: auto;
+    margin-top: 15rem;
+
 
     display: flex;
     flex-direction: column;

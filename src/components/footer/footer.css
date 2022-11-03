@@ -1,0 +1,30 @@
+.footer {
+    width: 100vw;
+    height: 10rem;
+
+    margin-top: 15rem;
+    background-color: #413D45;
+
+    display: flex;
+    justify-content: center;
+}
+
+.footer__content {
+    max-width: 80vw;
+    min-width: 40rem;
+    width: 100%;
+
+    color: #c6c2be;
+
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+
+    font-size: 75%;
+}
+
+.footer__content a {
+    text-decoration: none;
+    color: #c6c2be;
+}
